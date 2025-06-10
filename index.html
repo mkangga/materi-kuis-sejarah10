@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi dan Kuis Sejarah Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        .prose h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0; /* slate-200 */
+            color: #1e293b; /* slate-800 */
+        }
+        .prose h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #334155; /* slate-700 */
+        }
+        .prose p, .prose li {
+            line-height: 1.75;
+            font-size: 1.1rem;
+            color: #475569; /* slate-600 */
+        }
+        .prose blockquote {
+            border-left: 4px solid #3b82f6; /* blue-500 */
+            background-color: #eff6ff; /* blue-50 */
+            padding: 1rem;
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 8px;
+        }
+        .prose strong {
+            color: #0f172a; /* slate-900 */
+        }
+        .tab-active {
+            border-bottom-color: #3b82f6; /* blue-500 */
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        .btn-answer {
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-answer:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .correct {
+            background-color: #22c55e !important; /* green-500 */
+            color: white !important;
+            border-color: #16a34a !important; /* green-600 */
+        }
+        .incorrect {
+            background-color: #ef4444 !important; /* red-500 */
+            color: white !important;
+            border-color: #dc2626 !important; /* red-600 */
+        }
+        .explanation {
+            border-left: 4px solid #f97316; /* orange-500 */
+            background-color: #fff7ed; /* orange-50 */
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Jelajah Sejarah Indonesia</h1>
+            <p class="text-slate-600 mt-2 text-lg">Materi Lengkap dan Kuis Interaktif untuk Kelas X</p>
+        </header>
+
+        <!-- Navigasi Tab -->
+        <div class="mb-6 border-b border-slate-300">
+            <nav class="flex space-x-4" aria-label="Tabs">
+                <button id="tab-materi" class="py-4 px-1 border-b-2 font-medium text-lg border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 tab-active">
+                    Materi Belajar
+                </button>
+                <button id="tab-kuis" class="py-4 px-1 border-b-2 font-medium text-lg border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300">
+                    Kuis Interaktif
+                </button>
+            </nav>
+        </div>
+
+        <!-- Konten Materi -->
+        <main id="content-materi" class="bg-white p-6 md:p-8 rounded-xl shadow-lg prose max-w-none">
+            <article>
+                <h2>1. Teori Kedatangan Islam ke Indonesia</h2>
+                <p>Proses masuknya Islam ke Kepulauan Nusantara adalah sebuah peristiwa sejarah yang kompleks dan memunculkan berbagai pendapat di kalangan sejarawan. Masing-masing teori didukung oleh bukti-bukti yang berbeda, baik berupa artefak, catatan perjalanan, maupun kesamaan tradisi budaya.</p>
+                
+                <h3>Teori Gujarat (India)</h3>
+                <p>Teori ini dipelopori oleh sarjana Belanda seperti <strong>J. Pijnapel</strong>, yang kemudian didukung oleh <strong>C. Snouck Hurgronje</strong> dan <strong>J.P. Moquetta</strong>. Mereka berpendapat bahwa Islam yang masuk ke Nusantara berasal dari para pedagang Gujarat, India, pada sekitar abad ke-13 M. </p>
+                <ul>
+                    <li><strong>Bukti Utama:</strong> Kesamaan batu nisan Sultan Malik As-Saleh (wafat 1297 M) di Pasai dan makam Maulana Malik Ibrahim (wafat 1419 M) di Gresik dengan batu nisan yang ditemukan di Kambay, Gujarat. Moquetta menyimpulkan nisan ini diimpor atau dibuat oleh orang Gujarat.</li>
+                    <li><strong>Kelemahan:</strong> Teori ini mengabaikan fakta bahwa pada masa itu, Gujarat masih merupakan kerajaan Hindu, sedangkan Samudera Pasai sudah bercorak Islam dengan mazhab Syafi'i. Sementara itu, pedagang Gujarat yang datang umumnya bermazhab Hanafi.</li>
+                </ul>
+
+                <h3>Teori Persia (Iran)</h3>
+                <p>Teori ini dicetuskan oleh <strong>Hoesein Djajadiningrat</strong>, yang menyatakan bahwa Islam datang dari Persia (sekarang Iran) dan bermazhab Syi'ah. </p>
+                <ul>
+                    <li><strong>Bukti Utama:</strong> Adanya kesamaan tradisi budaya, terutama peringatan <strong>10 Muharram (Asyura)</strong> sebagai hari wafatnya Husein bin Ali. Di Indonesia, tradisi ini dirayakan dalam bentuk upacara <strong>Tabot</strong> di Bengkulu dan Pariaman, Sumatra Barat. Selain itu, ada kesamaan ajaran Sufi antara Syaikh Siti Jenar dengan ajaran Sufi Iran (al-Hallaj) dan penggunaan istilah Persia dalam sistem mengeja huruf Arab.</li>
+                    <li><strong>Kelemahan:</strong> Mayoritas umat Islam di Indonesia adalah penganut Sunni, bukan Syi'ah, sehingga pengaruh Persia dianggap tidak terlalu dominan dalam membentuk karakteristik Islam Nusantara secara umum.</li>
+                </ul>
+                
+                <h3>Teori Mekkah (Arab)</h3>
+                <p>Teori ini, yang sering dianggap paling kuat, dikemukakan oleh <strong>Buya Hamka</strong> dan didukung oleh <strong>Anthony H. Johns</strong>. Menurut teori ini, Islam datang langsung dari tanah kelahirannya, yaitu Arab (Mekkah dan Mesir), pada abad ke-7 M.</p>
+                <ul>
+                    <li><strong>Bukti Utama:</strong> Berita dari Tiongkok (Dinasti Tang) yang mencatat adanya perkampungan pedagang Arab Islam (Ta-shih) di pesisir barat Sumatra pada tahun 674 M. Raja-raja Samudera Pasai juga menggunakan gelar <strong>"Al-Malik"</strong>, sebuah gelar yang lazim dipakai oleh raja-raja di Mesir pada waktu itu. Mazhab yang dianut Samudera Pasai adalah Syafi'i, sama dengan mazhab yang dominan di Mesir dan Mekkah.</li>
+                </ul>
+
+                <h2>2. Proses Masuknya Islam (Kanalisasi Islamisasi)</h2>
+                <p>Penyebaran Islam di Nusantara berlangsung secara damai dan bertahap melalui berbagai saluran, yang memungkinkan ajaran ini diterima dengan baik oleh masyarakat setempat.</p>
+                <ul>
+                    <li><strong>Saluran Perdagangan:</strong> Ini adalah saluran paling awal. Kesibukan lalu lintas perdagangan abad ke-7 hingga ke-16 membuat pedagang Muslim (Arab, Persia, India) berdatangan ke Nusantara. Mereka membentuk pemukiman Muslim (Pekojan) di kota-kota pelabuhan yang kemudian menjadi pusat dakwah.</li>
+                    <li><strong>Saluran Perkawinan:</strong> Para pedagang Muslim yang menetap seringkali menikah dengan wanita pribumi. Syarat utama pernikahan adalah sang wanita harus memeluk Islam. Jika pernikahan terjadi dengan putri bangsawan atau raja, proses Islamisasi di kalangan elite kerajaan menjadi lebih cepat dan efektif.</li>
+                    <li><strong>Saluran Tasawuf:</strong> Para sufi mengajarkan tasawuf, yaitu ajaran untuk mendekatkan diri kepada Tuhan. Ajaran ini mudah diterima karena memiliki kesamaan dengan kepercayaan animisme dan dinamisme yang sudah ada sebelumnya, terutama dalam hal-hal mistis dan kekuatan gaib.</li>
+                    <li><strong>Saluran Pendidikan:</strong> Para ulama dan kiai mendirikan lembaga pendidikan Islam berupa <strong>pondok pesantren</strong>. Di sinilah para santri dari berbagai daerah belajar ilmu agama. Setelah lulus, mereka kembali ke daerahnya masing-masing untuk berdakwah, sehingga menyebarkan Islam lebih luas lagi. Pesantren Giri yang didirikan Sunan Giri adalah salah satu contohnya.</li>
+                    <li><strong>Saluran Kesenian:</strong> Seni menjadi media dakwah yang sangat efektif. Contoh paling terkenal adalah <strong>pertunjukan wayang kulit</strong> yang dimodifikasi oleh Sunan Kalijaga dengan menyisipkan filosofi Islam. Selain itu, seni gamelan, sastra (hikayat, babad), dan seni ukir juga digunakan sebagai media dakwah.</li>
+                    <li><strong>Saluran Politik:</strong> Ketika seorang raja memeluk Islam, rakyatnya akan cenderung mengikuti. Kepentingan politik untuk memperkuat kerajaan juga mendorong proses Islamisasi. Kemenangan kerajaan Islam atas kerajaan non-Islam seringkali menarik minat penduduk daerah taklukan untuk memeluk agama sang pemenang.</li>
+                </ul>
+
+                <h2>3. Manusia Purba, Ciri-Ciri, dan Alat yang Digunakan</h2>
+                <p>Indonesia adalah laboratorium manusia purba dunia. Penemuan-penemuan fosil di berbagai situs seperti Sangiran, Trinil, dan Mojokerto memberikan gambaran evolusi manusia di masa lampau.</p>
+                <h3>Jenis dan Ciri Manusia Purba:</h3>
+                <ul>
+                    <li><strong>Meganthropus Paleojavanicus (Manusia Raksasa dari Jawa Kuno):</strong> Ditemukan oleh <strong>G.H.R. von Koenigswald</strong> di Sangiran (1936 & 1941). Fosilnya berupa rahang bawah dan atas yang sangat besar dan kuat. Ciri-cirinya: badan tegap, tulang pipi tebal, tonjolan kening mencolok, dan tidak berdagu. Diperkirakan hidup pada masa Pleistosen Awal dan memakan tumbuhan.</li>
+                    <li><strong>Pithecanthropus (Manusia Kera):</strong> Fosilnya paling banyak ditemukan.
+                        <ul>
+                            <li><em>Pithecanthropus Mojokertensis:</em> Ditemukan von Koenigswald di dekat Mojokerto. Dianggap sebagai jenis Pithecanthropus tertua.</li>
+                            <li><em>Pithecanthropus Erectus:</em> Ditemukan oleh <strong>Eugene Dubois</strong> di Trinil, Ngawi (1891). Inilah temuan "missing link" yang menggemparkan dunia. Ciri-cirinya: tinggi badan 165-180 cm, volume otak 750-900 cc, sudah berjalan tegak.</li>
+                            <li><em>Pithecanthropus Soloensis:</em> Ditemukan di Ngandong, Blora. Volume otaknya lebih besar (sekitar 1.100 cc) dan dianggap lebih maju.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Homo (Manusia):</strong> Memiliki ciri fisik yang lebih berevolusi dan mendekati manusia modern.
+                        <ul>
+                            <li><em>Homo Wajakensis:</em> Ditemukan oleh van Rietschoten di Wajak, Tulungagung (1889). Memiliki ciri ras Mongoloid dan Austromelanesoid, dianggap sebagai nenek moyang ras di Indonesia.</li>
+                            <li><em>Homo Floresiensis (Hobbit):</em> Ditemukan di gua Liang Bua, Flores (2003). Ciri uniknya adalah tubuhnya yang kerdil (sekitar 1 meter) dengan volume otak kecil (380 cc), namun sudah mampu membuat peralatan batu yang kompleks.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Alat-alat yang Digunakan:</h3>
+                <p>Peralatan manusia purba berkembang seiring waktu, dari yang sangat sederhana hingga yang lebih kompleks.</p>
+                <ul>
+                    <li><strong>Zaman Paleolitikum (Batu Tua):</strong> Alat batu masih sangat kasar.
+                        <ul>
+                            <li><strong>Kebudayaan Pacitan:</strong> Didominasi oleh <strong>Kapak Perimbas (Chopper)</strong> dan <strong>Kapak Genggam</strong>, digunakan untuk menggali umbi dan memotong daging.</li>
+                            <li><strong>Kebudayaan Ngandong:</strong> Ditemukan alat-alat dari tulang (belati, ujung tombak) dan <strong>alat serpih (flakes)</strong> dari batu-batu indah seperti kalsedon.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Zaman Mesolitikum (Batu Tengah):</strong> Manusia mulai hidup semi-menetap.
+                        <ul>
+                            <li><strong>Kjokkenmoddinger (Sampah Dapur):</strong> Tumpukan kulit kerang di pesisir Sumatra. Ditemukan <strong>Kapak Sumatra (Pebble)</strong> yang sudah lebih halus dari kapak genggam dan batu pipisan.</li>
+                            <li><strong>Abris Sous Roche (Gua Hunian):</strong> Ditemukan ujung panah, flakes, dan alat dari tulang.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Zaman Neolitikum (Batu Baru):</strong> Terjadi revolusi budaya (food producing). Alat-alat sudah diasah sangat halus.
+                        <ul>
+                            <li><strong>Kapak Persegi:</strong> Ditemukan di Indonesia bagian barat (Sumatra, Jawa, Bali). Ada yang besar (beliung/cangkul) dan kecil (tarah/tatah).</li>
+                            <li><strong>Kapak Lonjong:</strong> Ditemukan di Indonesia bagian timur (Papua, Seram, Minahasa).</li>
+                            <li>Selain itu, juga berkembang perhiasan dari batu dan <strong>gerabah (tembikar)</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Zaman Logam (Perundagian):</strong> Muncul keahlian membuat alat dari logam. Indonesia mengalami Zaman Perunggu dan Besi secara bersamaan.
+                        <ul>
+                            <li><strong>Hasil budaya:</strong> Nekara (genderang perunggu besar untuk upacara), moko, kapak corong, bejana perunggu, dan aneka perhiasan.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>4. Keruntuhan Kerajaan Sriwijaya</h2>
+                <p>Sriwijaya, kerajaan maritim Buddha yang berkuasa selama lebih dari enam abad, mengalami kemunduran dan akhirnya runtuh karena kombinasi beberapa faktor.</p>
+                <ul>
+                    <li><strong>Faktor Geografis:</strong> Terjadi pendangkalan Sungai Musi dan sungai-sungai di sekitarnya. Hal ini menyebabkan ibu kota Sriwijaya yang semula strategis di tepi sungai menjadi terisolasi jauh di pedalaman dan kehilangan akses langsung ke laut, melumpuhkan fungsinya sebagai pelabuhan utama.</li>
+                    <li><strong>Faktor Politik (Internal):</strong> Melemahnya kekuatan armada laut Sriwijaya membuat pengawasan terhadap wilayah kekuasaannya menurun. Akibatnya, banyak daerah taklukan yang merasa tidak lagi terlindungi dan diuntungkan, sehingga memilih untuk melepaskan diri.</li>
+                    <li><strong>Faktor Politik (Eksternal):</strong> Sriwijaya mendapat serangan dari kerajaan lain yang ingin merebut dominasi perdagangan di Selat Malaka.
+                        <ul>
+                            <li><strong>Serangan Colamandala (1017 & 1025 M):</strong> Serangan dari Raja Rajendracola dari India Selatan ini merupakan pukulan telak. Raja Sriwijaya, Sri Sanggramawijayattunggawarman, bahkan sempat ditawan.</li>
+                            <li><strong>Ekspedisi Pamalayu (1275 M):</strong> Serangan dari Raja Kertanegara dari Singhasari yang berhasil menguasai wilayah Melayu, melemahkan pengaruh Sriwijaya di Selat Malaka.</li>
+                            <li><strong>Serangan Majapahit (1377 M):</strong> Serangan armada laut Majapahit di bawah pimpinan Laksamana Nala secara efektif mengakhiri riwayat Kerajaan Sriwijaya.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>5. Kerajaan Mataram Kuno (Medang)</h2>
+                <p>Kerajaan Mataram Kuno adalah kerajaan besar yang berpusat di Jawa Tengah dari abad ke-8 hingga ke-10 M. Keunikannya terletak pada keberadaan dua dinasti besar yang memerintah secara bersamaan atau bergantian dengan corak agama yang berbeda.</p>
+                <ul>
+                    <li><strong>Dinasti Sanjaya:</strong> Menganut agama Hindu (aliran Siwa). Didirikan oleh Raja Sanjaya. Meninggalkan peninggalan berupa Prasasti Canggal (732 M) dan kompleks Candi Prambanan yang megah.</li>
+                    <li><strong>Dinasti Syailendra:</strong> Menganut agama Buddha (aliran Mahayana). Diduga berasal dari Sriwijaya atau dari keturunan Dapunta Syailendra. Mencapai puncak kejayaan pada masa pemerintahan Raja Samaratungga dan meninggalkan warisan dunia, Candi Borobudur.</li>
+                    <li><strong>Penyatuan Dinasti:</strong> Perpecahan antara dua dinasti ini berakhir melalui perkawinan politik antara <strong>Rakai Pikatan</strong> (dari Dinasti Sanjaya) dengan <strong>Pramodawardhani</strong> (putri Samaratungga dari Dinasti Syailendra). Peristiwa ini menyatukan kembali Mataram Kuno. Namun, adik Pramodawardhani, Balaputradewa, menentang penyatuan ini, yang memicu perang saudara. Balaputradewa kalah dan melarikan diri ke Sriwijaya, di mana ia kemudian menjadi raja besar.</li>
+                    <li><strong>Pemindahan ke Jawa Timur:</strong> Pada masa pemerintahan Mpu Sindok (sekitar 929 M), pusat kerajaan dipindahkan dari Jawa Tengah ke Jawa Timur. Alasan pemindahan ini diduga kuat karena letusan dahsyat Gunung Merapi dan juga untuk menghindari serangan dari Sriwijaya. Pemindahan ini menandai berakhirnya periode Mataram Kuno di Jawa Tengah dan dimulainya periode baru dengan Dinasti Isyana di Jawa Timur.</li>
+                </ul>
+
+                <h2>6. Kerajaan Kutai</h2>
+                <p>Kutai Martadipura adalah kerajaan Hindu tertua di Indonesia, diperkirakan berdiri pada abad ke-5 M. Letaknya di Muara Kaman, di tepi Sungai Mahakam, Kalimantan Timur, sebuah lokasi yang sangat strategis untuk perdagangan.</p>
+                <ul>
+                    <li><strong>Sumber Sejarah:</strong> Informasi mengenai Kutai berasal dari tujuh buah prasasti <strong>Yupa</strong>, yaitu tugu batu yang berfungsi untuk mengikat hewan kurban dan sebagai tugu peringatan upacara. Prasasti ini ditulis dalam huruf Pallawa dan bahasa Sanskerta.</li>
+                    <li><strong>Silsilah Raja:</strong> Yupa menyebutkan silsilah raja-raja. Raja pertamanya adalah <strong>Kudungga</strong>, sebuah nama asli Nusantara, yang menunjukkan ia adalah kepala suku lokal. Putranya, <strong>Aswawarman</strong>, dianggap sebagai pendiri dinasti (Wangsakerta) karena namanya sudah berbau India. Puncak kejayaan Kutai dicapai di bawah cucu Kudungga, Raja <strong>Mulawarman</strong>.</li>
+                    <li><strong>Kehidupan Ekonomi dan Agama:</strong> Prasasti Yupa menyebutkan kedermawanan Raja Mulawarman yang menyedekahkan <strong>20.000 ekor sapi</strong> kepada kaum Brahmana. Hal ini menunjukkan bahwa kegiatan peternakan sudah sangat maju. Masyarakatnya juga bertani dan berdagang. Agama yang dianut adalah Hindu Siwa, terbukti dari adanya tempat suci bernama <strong>Waprakeswara</strong>.</li>
+                </ul>
+
+                <h2>7. Kerajaan Tarumanegara</h2>
+                <p>Tarumanegara adalah kerajaan Hindu yang berkuasa di Jawa Barat antara abad ke-5 hingga ke-7 M. Pusatnya diperkirakan berada di antara Sungai Citarum dan Cisadane. Raja yang paling terkenal adalah Purnawarman.</p>
+                <ul>
+                    <li><strong>Sumber Sejarah:</strong> Terdapat tujuh prasasti peninggalan Tarumanegara.
+                        <ul>
+                            <li><strong>Prasasti Ciaruteun:</strong> Terdapat cap telapak kaki Raja Purnawarman yang diibaratkan sebagai telapak kaki Dewa Wisnu, menunjukkan raja adalah titisan dewa.</li>
+                            <li><strong>Prasasti Kebon Kopi:</strong> Terdapat cap telapak kaki gajah sang raja, yang disamakan dengan gajah Airawata, kendaraan Dewa Indra.</li>
+                            <li><strong>Prasasti Tugu:</strong> Prasasti terpenting yang berisi informasi pembangunan <strong>saluran air Gomati</strong> sepanjang ±11 km dalam waktu 21 hari. Saluran ini berfungsi untuk irigasi pertanian dan mengendalikan banjir. Pembangunan ini diakhiri dengan sedekah 1.000 ekor sapi.</li>
+                            <li>Prasasti lainnya adalah Prasasti Jambu, Cidanghiang, Muara Cianten, dan Pasir Awi.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kehidupan Masyarakat:</strong> Berdasarkan berita dari Fa-Hien, di Tarumanegara (To-lo-mo) mayoritas penduduknya beragama Hindu, sedikit yang beragama Buddha, dan masih ada yang menganut kepercayaan animisme. Mata pencaharian utamanya adalah pertanian, peternakan, dan perdagangan.</li>
+                </ul>
+
+                <h2>8. Kerajaan Majapahit</h2>
+                <p>Majapahit merupakan kerajaan Hindu-Buddha terbesar dan terakhir di Nusantara, yang kekuasaannya membentang luas. Kerajaan ini didirikan oleh <strong>Raden Wijaya</strong> (bergelar Kertarajasa Jayawardhana) pada tahun 1293 M setelah berhasil mengusir pasukan Mongol.</p>
+                <ul>
+                    <li><strong>Puncak Kejayaan:</strong> Masa keemasan Majapahit terjadi pada masa pemerintahan Raja <strong>Hayam Wuruk</strong> (1350-1389 M), yang didampingi oleh <strong>Mahapatih Gajah Mada</strong>. Gajah Mada terkenal dengan sumpahnya yang fenomenal, yaitu <strong>Sumpah Palapa</strong>, yang diucapkannya saat diangkat menjadi patih. Ia bersumpah tidak akan menikmati kesenangan duniawi (amukti palapa) sebelum berhasil menyatukan seluruh Nusantara di bawah panji Majapahit. Cita-cita ini berhasil diwujudkan.</li>
+                    <li><strong>Wilayah Kekuasaan:</strong> Menurut kitab <strong>Nagarakertagama</strong> karya Mpu Prapanca, wilayah kekuasaan Majapahit meliputi Sumatra, Semenanjung Malaya, Kalimantan, Sulawesi, Nusa Tenggara, Maluku, hingga Papua, serta menjalin hubungan persahabatan (Mitreka Satata) dengan negara-negara tetangga seperti Campa, Siam, dan Kamboja.</li>
+                    <li><strong>Kehidupan Budaya:</strong> Sastra berkembang pesat dengan lahirnya karya agung seperti <strong>Nagarakertagama</strong> dan <strong>Sutasoma</strong> karya Mpu Tantular. Dalam kitab Sutasoma inilah terdapat kalimat <strong>"Bhinneka Tunggal Ika"</strong>, yang berarti "Berbeda-beda tetapi tetap satu jua", yang menjadi semboyan negara Indonesia. Toleransi beragama antara Hindu (Siwa) dan Buddha sangat tinggi.</li>
+                    <li><strong>Keruntuhan:</strong> Setelah wafatnya Hayam Wuruk dan Gajah Mada, Majapahit mengalami kemunduran. Faktor utamanya adalah <strong>Perang Paregreg (1404-1406)</strong>, sebuah perang saudara antara Wikramawardhana melawan Bhre Wirabhumi untuk memperebutkan takhta. Perang ini menguras kekuatan dan keuangan kerajaan. Faktor lainnya adalah semakin berkembangnya pengaruh Islam di pesisir utara Jawa.</li>
+                </ul>
+
+                <h2>9. Kerajaan Samudera Pasai</h2>
+                <p>Samudera Pasai adalah kesultanan Islam pertama di Indonesia. Terletak di pesisir utara Aceh, kerajaan ini menjadi gerbang utama masuknya Islam dan pusat perdagangan internasional pada abad ke-13 hingga ke-15 M.</p>
+                <ul>
+                    <li><strong>Pendiri dan Raja:</strong> Didirikan oleh <strong>Marah Silu</strong> yang setelah masuk Islam bergelar <strong>Sultan Malik As-Saleh</strong>. Makamnya yang berangka tahun 1297 M menjadi bukti arkeologis penting.</li>
+                    <li><strong>Pusat Perdagangan dan Studi Islam:</strong> Letaknya yang strategis di Selat Malaka membuatnya menjadi bandar yang ramai dikunjungi pedagang dari Arab, Persia, India, dan Tiongkok. Komoditas utamanya adalah lada. Penjelajah terkenal dari Maroko, <strong>Ibnu Battutah</strong>, pernah mengunjungi Pasai pada tahun 1345 dan mencatat bahwa sultannya adalah seorang yang sangat taat beragama (mazhab Syafi'i) dan gemar berdiskusi dengan para ulama.</li>
+                    <li><strong>Peran dalam Islamisasi:</strong> Pasai memainkan peran kunci dalam menyebarkan Islam ke wilayah lain di Asia Tenggara, terutama ke Malaka. Hubungan erat ini diperkuat melalui perkawinan antara keluarga kerajaan Pasai dan Malaka.</li>
+                </ul>
+
+                <h2>10. Teori Asal Usul Nenek Moyang Bangsa Indonesia</h2>
+                <p>Asal-usul nenek moyang bangsa Indonesia merupakan topik yang menarik dengan beberapa teori yang berkembang.</p>
+                <ul>
+                    <li><strong>Teori Yunan:</strong> Didukung oleh para ahli seperti R.H. Geldern dan J.H.C. Kern. Menyatakan nenek moyang bangsa Indonesia berasal dari Yunan (Tiongkok Selatan) yang bermigrasi ke selatan karena terdesak oleh suku bangsa lain yang lebih kuat. Migrasi ini terjadi dalam dua gelombang besar (Proto dan Deutro Melayu).</li>
+                    <li><strong>Teori Nusantara:</strong> Dipelopori oleh tokoh seperti Mohammad Yamin dan Gorys Keraf. Teori ini berpendapat bahwa bangsa Indonesia berkembang di wilayah Nusantara sendiri dan tidak berasal dari luar. Dasarnya adalah banyaknya penemuan fosil manusia purba di Indonesia yang menunjukkan adanya evolusi lokal.</li>
+                    <li><strong>Teori Out of Africa:</strong> Teori modern berdasarkan penelitian genetika. Menyatakan bahwa semua manusia modern (Homo Sapiens) berasal dari Afrika, yang kemudian bermigrasi dan menyebar ke seluruh penjuru dunia, termasuk tiba di Nusantara sekitar 60.000 tahun yang lalu.</li>
+                    <li><strong>Teori Out of Taiwan:</strong> Didukung oleh bukti linguistik dan arkeologis. Menyatakan bahwa penutur bahasa Austronesia (rumpun bahasa yang digunakan di mayoritas wilayah Indonesia) berasal dari Taiwan. Sekitar 4.000 tahun lalu, mereka menyebar ke selatan melalui Filipina, lalu masuk ke Kalimantan, Sulawesi, dan menyebar ke seluruh Nusantara, membawa budaya bercocok tanam.</li>
+                </ul>
+                
+                <h2>11. Ras Proto Melayu dan Deutro Melayu</h2>
+                <p>Dua gelombang migrasi ini merupakan bagian dari Teori Yunan yang membedakan nenek moyang berdasarkan waktu kedatangan dan kebudayaan yang dibawa.</p>
+                <ul>
+                    <li><strong>Proto Melayu (Melayu Tua):</strong> Merupakan gelombang migrasi pertama sekitar <strong>2000 SM</strong>. Mereka masuk melalui dua jalur: jalur barat (melalui Malaysia dan Sumatra) dan jalur timur (melalui Filipina dan Sulawesi). Mereka membawa kebudayaan <strong>Batu Baru (Neolitikum)</strong>, yang ditandai dengan kapak persegi dan kapak lonjong. Keturunan mereka saat ini diyakini adalah Suku Batak, Dayak, Toraja, Alas, dan Gayo.</li>
+                    <li><strong>Deutro Melayu (Melayu Muda):</strong> Merupakan gelombang migrasi kedua sekitar <strong>500 SM</strong>. Mereka masuk melalui jalur barat. Mereka membawa peradaban yang lebih maju, yaitu <strong>Kebudayaan Dongson (Perunggu dan Besi)</strong>. Mereka berhasil mendesak dan berakulturasi dengan populasi Proto Melayu. Keturunan mereka diyakini mencakup mayoritas suku di Indonesia saat ini, seperti Suku Jawa, Melayu, Bugis, dan Minang.</li>
+                </ul>
+                
+                <h2>12. Pola Hidup Manusia Zaman Prasejarah</h2>
+                <p>Kehidupan manusia prasejarah mengalami perkembangan signifikan dari sangat bergantung pada alam hingga mampu mengendalikan alam untuk memenuhi kebutuhan.</p>
+                <ul>
+                    <li><strong>Masa Berburu dan Meramu (Food Gathering):</strong>
+                        <ul>
+                            <li><strong>Pola Hunian:</strong> Hidup secara <strong>nomaden</strong> (berpindah-pindah). Mereka memilih tinggal di tempat yang dekat dengan sumber air (sungai, danau) dan kaya akan bahan makanan. Tempat tinggalnya berupa gua-gua (<strong>abris sous roche</strong>) atau tempat terbuka dengan membuat atap sederhana dari dedaunan.</li>
+                            <li><strong>Sosial-Ekonomi:</strong> Hidup dalam kelompok-kelompok kecil. Kebutuhan hidup dipenuhi dengan berburu hewan dan mengumpulkan umbi-umbian, buah, dan daun. Belum mengenal bercocok tanam.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Masa Bercocok Tanam (Food Producing):</strong>
+                        <ul>
+                            <li><strong>Pola Hunian:</strong> Mulai hidup <strong>menetap (sedenter)</strong> dalam sebuah perkampungan. Muncul sistem gotong royong dan seorang pemimpin (kepala suku) yang dipilih berdasarkan kekuatan dan kearifannya.</li>
+                            <li><strong>Sosial-Ekonomi:</strong> Terjadi sebuah <strong>revolusi kebudayaan</strong>. Manusia tidak lagi hanya mengumpulkan makanan, tetapi sudah mampu <strong>memproduksi makanan</strong> sendiri melalui bercocok tanam (sistem ladang dengan tebang-bakar) dan beternak hewan seperti anjing, babi, dan ayam.</li>
+                        </ul>
+                    </li>
+                     <li><strong>Masa Perundagian (Keahlian Khusus):</strong>
+                        <ul>
+                            <li><strong>Pola Hunian:</strong> Kehidupan di perkampungan sudah sangat teratur dan makmur, dengan pembagian kerja yang jelas.</li>
+                            <li><strong>Sosial-Ekonomi:</strong> Muncul golongan <strong>undagi</strong> atau tukang yang memiliki keahlian khusus, terutama dalam membuat peralatan dari logam (perunggu dan besi). Perdagangan antarpulau dengan sistem barter mulai berkembang pesat.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </main>
+        
+        <!-- Konten Kuis -->
+        <div id="content-kuis" class="hidden">
+            <div id="quiz-container" class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                <!-- Pertanyaan dan jawaban akan dimuat di sini oleh JavaScript -->
+            </div>
+            <div id="navigation-container" class="mt-6 flex justify-between items-center">
+                 <button id="restart-btn" class="bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg hidden">Mulai Lagi</button>
+                <button id="next-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg ml-auto hidden">Lanjut</button>
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    // Elemen DOM
+    const tabMateri = document.getElementById('tab-materi');
+    const tabKuis = document.getElementById('tab-kuis');
+    const contentMateri = document.getElementById('content-materi');
+    const contentKuis = document.getElementById('content-kuis');
+    const quizContainer = document.getElementById('quiz-container');
+    const nextBtn = document.getElementById('next-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    // Data Kuis
+    const quizData = [
+        {
+            question: "Teori yang menyatakan Islam masuk ke Indonesia melalui para pedagang dari Persia didukung oleh bukti adanya tradisi serupa, yaitu...",
+            answers: [
+                { text: "Penggunaan gelar Al-Malik oleh raja-raja Pasai", correct: false },
+                { text: "Upacara Tabot di Bengkulu untuk merayakan 10 Muharram", correct: true },
+                { text: "Batu nisan di Gresik yang mirip dengan nisan di Kambay", correct: false },
+                { text: "Catatan perjalanan dari I-Tsing", correct: false }
+            ],
+            explanation: "Teori Persia, yang dikemukakan oleh Hoesein Djajadiningrat, didasarkan pada kesamaan budaya, salah satunya adalah perayaan 10 Muharram atau Asyura. Di Indonesia, tradisi ini dikenal sebagai upacara Tabot di Bengkulu dan Pariaman."
+        },
+        {
+            question: "Sunan Kalijaga menggunakan media kesenian yang sangat populer di masyarakat Jawa untuk menyebarkan ajaran Islam. Media kesenian tersebut adalah...",
+            answers: [
+                { text: "Permainan Debus", correct: false },
+                { text: "Tari Seudati", correct: false },
+                { text: "Pertunjukan Wayang Kulit", correct: true },
+                { text: "Seni Kaligrafi", correct: false }
+            ],
+            explanation: "Sunan Kalijaga terkenal dengan pendekatannya yang akulturatif. Ia menggunakan Wayang Kulit, kesenian yang sudah mendarah daging di Jawa, dengan menyisipkan ajaran dan nilai-nilai Islam ke dalam cerita-ceritanya."
+        },
+        {
+            question: "Manusia purba jenis Pithecanthropus Erectus ditemukan oleh Eugene Dubois di lokasi...",
+            answers: [
+                { text: "Sangiran, Sragen", correct: false },
+                { text: "Wajak, Tulungagung", correct: false },
+                { text: "Liang Bua, Flores", correct: false },
+                { text: "Trinil, Ngawi", correct: true }
+            ],
+            explanation: "Eugene Dubois melakukan penggalian di Trinil, sebuah desa di pinggiran Bengawan Solo, Ngawi. Di sanalah ia menemukan fosil atap tengkorak dan tulang paha yang kemudian dinamai Pithecanthropus Erectus."
+        },
+        {
+            question: "Faktor utama yang menyebabkan keruntuhan Kerajaan Sriwijaya sebagai kerajaan maritim besar adalah...",
+            answers: [
+                { text: "Serangan besar dari Kerajaan Colamandala (India)", correct: true },
+                { text: "Letusan gunung berapi yang dahsyat", correct: false },
+                { text: "Perang saudara antara Dinasti Sanjaya dan Syailendra", correct: false },
+                { text: "Jatuhnya Konstantinopel ke tangan Turki Usmani", correct: false }
+            ],
+            explanation: "Meskipun ada banyak faktor, serangan besar dari Raja Rajendracola dari Colamandala pada tahun 1025 M menjadi pukulan telak yang sangat melemahkan kekuatan maritim dan politik Sriwijaya."
+        },
+        {
+            question: "Dua candi megah yang menjadi bukti peninggalan Kerajaan Mataram Kuno dari dua dinasti yang berbeda adalah...",
+            answers: [
+                { text: "Candi Jago dan Candi Kidal", correct: false },
+                { text: "Candi Borobudur (Buddha) dan Candi Prambanan (Hindu)", correct: true },
+                { text: "Candi Tikus dan Candi Penataran", correct: false },
+                { text: "Candi Muara Takus dan Candi Gedong Songo", correct: false }
+            ],
+            explanation: "Candi Borobudur adalah mahakarya Dinasti Syailendra yang beragama Buddha, sementara Candi Prambanan adalah mahakarya Dinasti Sanjaya yang beragama Hindu. Keduanya menunjukkan toleransi dan puncak kebudayaan Mataram Kuno."
+        },
+        {
+            question: "Sumber sejarah utama mengenai Kerajaan Kutai adalah prasasti yang ditulis di atas tugu batu yang disebut...",
+            answers: [
+                { text: "Yupa", correct: true },
+                { text: "Batu Tulis", correct: false },
+                { text: "Plakat", correct: false },
+                { text: "Tugu Peringatan", correct: false }
+            ],
+            explanation: "Sumber sejarah Kerajaan Kutai adalah tujuh buah Yupa. Yupa adalah tugu batu yang berfungsi sebagai tugu peringatan upacara kurban dan juga memuat tulisan mengenai silsilah raja dan kedermawanannya."
+        },
+        {
+            question: "Raja Purnawarman dari Kerajaan Tarumanegara dikenal membangun saluran air untuk irigasi dan mencegah banjir. Saluran air tersebut bernama...",
+            answers: [
+                { text: "Sungai Citarum", correct: false },
+                { text: "Sungai Cisadane", correct: false },
+                { text: "Saluran Gomati", correct: true },
+                { text: "Saluran Candrabhaga", correct: false }
+            ],
+            explanation: "Prasasti Tugu secara spesifik menyebutkan bahwa Raja Purnawarman memerintahkan penggalian saluran air bernama Gomati sepanjang ±11 km, yang selesai dalam 21 hari dan dirayakan dengan persembahan 1.000 ekor sapi."
+        },
+        {
+            question: "Puncak kejayaan Kerajaan Majapahit dicapai pada masa pemerintahan...",
+            answers: [
+                { text: "Raden Wijaya", correct: false },
+                { text: "Jayanegara", correct: false },
+                { text: "Hayam Wuruk dengan Mahapatih Gajah Mada", correct: true },
+                { text: "Kertanegara", correct: false }
+            ],
+            explanation: "Majapahit mencapai masa keemasannya di bawah kepemimpinan Raja Hayam Wuruk (1350-1389 M). Keberhasilan ini tidak lepas dari peran Mahapatih Gajah Mada yang berhasil melaksanakan Sumpah Palapa untuk menyatukan Nusantara."
+        },
+        {
+            question: "Kerajaan Islam pertama di Indonesia yang menjadi pusat perdagangan dan studi Islam adalah...",
+            answers: [
+                { text: "Kerajaan Demak", correct: false },
+                { text: "Kerajaan Aceh", correct: false },
+                { text: "Kerajaan Ternate", correct: false },
+                { text: "Kerajaan Samudera Pasai", correct: true }
+            ],
+            explanation: "Samudera Pasai yang didirikan oleh Sultan Malik As-Saleh pada abad ke-13 M diakui sebagai kesultanan Islam pertama di Nusantara. Letaknya yang strategis di Selat Malaka menjadikannya bandar perdagangan dan pusat studi Islam yang penting."
+        },
+        {
+            question: "Kelompok nenek moyang bangsa Indonesia yang datang pada gelombang kedua (sekitar 500 SM) dan membawa kebudayaan perunggu (Dongson) adalah...",
+            answers: [
+                { text: "Melanesoid", correct: false },
+                { text: "Proto Melayu", correct: false },
+                { text: "Deutro Melayu", correct: true },
+                { text: "Austronesia", correct: false }
+            ],
+            explanation: "Deutro Melayu atau Melayu Muda adalah gelombang migrasi kedua menurut Teori Yunan. Mereka memiliki peradaban lebih maju dengan membawa kebudayaan logam (perunggu dan besi). Keturunan mereka diyakini adalah suku Jawa, Melayu, dan Bugis."
+        },
+         {
+            question: "Pola hidup manusia prasejarah yang berpindah-pindah untuk mencari sumber makanan disebut...",
+            answers: [
+                { text: "Sedenter", correct: false },
+                { text: "Nomaden", correct: true },
+                { text: "Undagi", correct: false },
+                { text: "Agraris", correct: false }
+            ],
+            explanation: "Pada masa berburu dan meramu, manusia hidup secara nomaden, yaitu berpindah dari satu tempat ke tempat lain mengikuti pergerakan hewan buruan dan ketersediaan tumbuhan sebagai sumber makanan."
+        },
+        {
+            question: "Alat-alat dari tulang, tanduk rusa, dan alat serpih (flakes) merupakan ciri khas dari kebudayaan...",
+            answers: [
+                { text: "Kebudayaan Pacitan", correct: false },
+                { text: "Kebudayaan Ngandong", correct: true },
+                { text: "Kebudayaan Neolitikum", correct: false },
+                { text: "Kebudayaan Perunggu", correct: false }
+            ],
+            explanation: "Kebudayaan Ngandong, yang ditemukan di dekat Ngawi, memiliki ciri khas penggunaan alat-alat yang terbuat dari tulang dan tanduk rusa, serta alat-alat kecil dari batu yang disebut flakes. Ini berbeda dengan Kebudayaan Pacitan yang dominan dengan kapak perimbasnya."
+        }
+
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let quizActive = false;
+
+    // Fungsi untuk berpindah tab
+    function switchTab(tabName) {
+        if (tabName === 'materi') {
+            contentMateri.classList.remove('hidden');
+            contentKuis.classList.add('hidden');
+            tabMateri.classList.add('tab-active');
+            tabKuis.classList.remove('tab-active');
+        } else if (tabName === 'kuis') {
+            contentMateri.classList.add('hidden');
+            contentKuis.classList.remove('hidden');
+            tabMateri.classList.remove('tab-active');
+            tabKuis.classList.add('tab-active');
+            if (!quizActive) {
+                startQuiz();
+            }
+        }
+    }
+
+    tabMateri.addEventListener('click', () => switchTab('materi'));
+    tabKuis.addEventListener('click', () => switchTab('kuis'));
+
+    // Fungsi untuk memulai atau mereset kuis
+    function startQuiz() {
+        currentQuestionIndex = 0;
+        score = 0;
+        quizActive = true;
+        nextBtn.classList.add('hidden');
+        restartBtn.classList.add('hidden');
+        loadQuestion();
+    }
+
+    // Fungsi untuk memuat pertanyaan
+    function loadQuestion() {
+        quizContainer.innerHTML = '';
+        nextBtn.classList.add('hidden');
+        
+        if (currentQuestionIndex >= quizData.length) {
+            showResults();
+            return;
+        }
+
+        const currentQuestion = quizData[currentQuestionIndex];
+        
+        // Buat elemen pertanyaan
+        const questionElement = document.createElement('div');
+        questionElement.innerHTML = `
+            <p class="text-slate-500 mb-2">Pertanyaan ${currentQuestionIndex + 1} dari ${quizData.length}</p>
+            <h3 class="text-2xl font-semibold mb-6">${currentQuestion.question}</h3>
+        `;
+        quizContainer.appendChild(questionElement);
+        
+        // Buat elemen jawaban
+        const answersElement = document.createElement('div');
+        answersElement.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+        
+        currentQuestion.answers.forEach(answer => {
+            const button = document.createElement('button');
+            button.innerText = answer.text;
+            button.className = 'btn-answer w-full text-left p-4 border-2 border-slate-300 rounded-lg hover:bg-slate-100 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300';
+            button.addEventListener('click', () => selectAnswer(answer.correct, button));
+            answersElement.appendChild(button);
+        });
+        
+        quizContainer.appendChild(answersElement);
+    }
+    
+    // Fungsi untuk memilih jawaban
+    function selectAnswer(isCorrect, selectedButton) {
+        const buttons = quizContainer.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.disabled = true; // Nonaktifkan semua tombol setelah menjawab
+        });
+
+        if (isCorrect) {
+            score++;
+            selectedButton.classList.add('correct');
+        } else {
+            selectedButton.classList.add('incorrect');
+            // Tunjukkan jawaban yang benar
+            const correctButtonText = quizData[currentQuestionIndex].answers.find(ans => ans.correct).text;
+            buttons.forEach(button => {
+                if(button.innerText === correctButtonText) {
+                    button.classList.add('correct');
+                }
+            });
+        }
+        
+        // Tampilkan penjelasan
+        const explanationElement = document.createElement('div');
+        explanationElement.className = 'explanation p-4 mt-6 rounded-lg';
+        explanationElement.innerHTML = `<p class="font-bold">Pembahasan:</p><p>${quizData[currentQuestionIndex].explanation}</p>`;
+        quizContainer.appendChild(explanationElement);
+        
+        nextBtn.classList.remove('hidden');
+    }
+    
+    // Fungsi untuk menampilkan hasil
+    function showResults() {
+        quizActive = false;
+        quizContainer.innerHTML = `
+            <div class="text-center">
+                <h3 class="text-3xl font-bold mb-4">Kuis Selesai!</h3>
+                <p class="text-xl mb-2">Skor Akhir Anda:</p>
+                <p class="text-6xl font-bold text-blue-500 mb-6">${score} / ${quizData.length}</p>
+                <p class="text-slate-600">${getFeedback(score)}</p>
+            </div>
+        `;
+        restartBtn.classList.remove('hidden');
+        nextBtn.classList.add('hidden');
+    }
+    
+    function getFeedback(score) {
+        const percentage = (score / quizData.length) * 100;
+        if (percentage >= 80) return "Luar biasa! Pemahaman sejarah Anda sangat baik.";
+        if (percentage >= 60) return "Bagus! Anda sudah memahami sebagian besar materi.";
+        if (percentage >= 40) return "Cukup baik. Coba pelajari lagi materi yang belum dikuasai.";
+        return "Jangan menyerah! Coba baca kembali materinya dan ulangi kuis ini.";
+    }
+
+    // Event listener untuk tombol lanjut dan mulai lagi
+    nextBtn.addEventListener('click', () => {
+        currentQuestionIndex++;
+        loadQuestion();
+    });
+    
+    restartBtn.addEventListener('click', startQuiz);
+
+    // Muat halaman materi secara default
+    window.onload = () => {
+        switchTab('materi');
+    };
+
+</script>
+
+</body>
+</html>
